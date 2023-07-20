@@ -22,6 +22,27 @@
 
     .header-right .right-item{
         flex-direction: column;
+        gap: 5px;
+    }
+
+    .right-item p{
+        font-size: 20px;
+    }
+
+    .header-right .right-follo{
+        width: 300px;
+    }
+
+    .right-follo > p{
+        font-size: 20px;
+    }
+
+    .right-follo .youtube{
+        font-size: 30px;
+    } 
+    
+    .right-follo .tik-tok{
+        font-size: 30px;
     }
 
     /* banner section section starts */
@@ -35,7 +56,8 @@
         object-fit: cover;
         margin: 0 auto;
         box-sizing: border-box;
-        padding: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         
     }
 
@@ -43,22 +65,22 @@
         width: 90%;
         object-fit: cover;
         margin: 0 auto;
-        box-sizing: border-box;
-        padding: 5px;
+        padding-top:10px ;
+        padding-bottom: 10px;
     }
 
-    * onlie games section starts */
+    /* onlie games section starts */ 
+    
     .online-h3{
-        font-size: 25px;
-        padding-bottom: 20px;
+        font-size: 48px;
     }
 
     .online-h3 span{
-        font-size: 25px;
+        font-size: 48px;
     }
 
     .online-p{
-        font-size: 15px;
+        font-size: 18px;
     }
     
 
@@ -127,19 +149,34 @@
 
 .team-item-top{
     grid-template-columns: auto auto auto;
+    margin: 90px auto;
+    gap: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.team-man {
+    gap: 15px;}
+
+.team-man img{
+    width: 30px;
+ }
+
+ .team-man p{
+    font-size: 10px;
 }
 
 /* footer section stated */
+
+.footer-container{
+    text-align: center;
+    width: 90%;
+}
 
 .footer-nav{
     display: grid;
     grid-template-columns:repeat(3, 1fr) ;
     gap: 10px;
-}
-
-.footer-container{
-    text-align: center;
-    width: 90%;
 }
 
 .footer-icon{
@@ -154,6 +191,12 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
+}
+
+.games-coppright-section p{
+    width: 260px;
+    height: 38px;
+    margin: 5px auto;
 }
 }
 /* mobile responsive stated*/
@@ -193,8 +236,8 @@
         width: 90%;
         object-fit: cover;
         margin: 0 auto;
-        box-sizing: border-box;
-        padding: 10px;
+        padding-top:px ;
+        padding-bottom: 30px;
         
     }
 
@@ -202,7 +245,7 @@
         font-size: 35px;
     }
 
-    .banner-text h1{font-size: 62px;}
+    .banner-text h1{font-size: 50px;}
 
     .banner-button .button-sign{
         width: 100px;
@@ -220,8 +263,8 @@
         width: 90%;
         object-fit: cover;
         margin: 0 auto;
-        box-sizing: border-box;
-        padding: 5px;
+        padding-top:10px ;
+        padding-bottom: 10px;
     }
 
     /* onlie games section starts */
@@ -265,6 +308,14 @@
     text-align:center;
 }
 
+.instantly-text-h2{
+    font-size: 40px;
+}
+
+.instantly-text-h2 .text-span{
+    font-size: 40px;
+}
+
 .play-instantly-img{
     width: 80%;
 }
@@ -278,61 +329,34 @@
 
 /* Team section starts */
 
-.team-section{
-    margin: 160px auto; 
-    display: flex;
-    flex-direction: column; 
-    gap: 20px; 
-}
-
 .team-item-top{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 0 auto;
-}
-
-.team-item-bottom{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-
-.team-man {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:5;
+    grid-template-columns: auto auto auto;
+    margin: 90px auto;
+    gap: 5px;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .team-man img{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
+    width: 30px;
  }
 
-.team-man p{
-    text-align: center;
-    color: #0B0223;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-#arade-games{
-    border: 2px solid #FF42A5;
-    border-radius: 50px;
-}
-
-/* Team section starts */
-
-.team-item-top{
-    grid-template-columns: auto auto auto;
+ .team-man p{
+    font-size: 10px;
 }
 
 /* footer section stated */
 
 .footer-nav{
     display: grid;
-    grid-template-columns:repeat(3, 1fr) ;
-    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+ .footer-nav .footer-nav-p{
+    font-size:14px ;
+    color: #FFF;
 }
 
 .footer-container{
@@ -343,15 +367,31 @@
 .footer-icon{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 30px;
+    gap: 20px;
     padding-top: 10px;
     padding-bottom:10px ;
 }
 
+
+.footer-icon i, strong{
+    font-size: 30px;
+}
+
 .footer-bottm-nav{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
-    
+    grid-template-columns: repeat(2,1fr); 
+    gap: 0;
 }
+
+.footer-bottm-nav p{
+    font-size:10px;
+}
+
+
+.games-coppright-section p{
+    width: 260px;
+    height: 38px;
+    margin: 5px auto;
+}
+
 }
